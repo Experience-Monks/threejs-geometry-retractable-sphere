@@ -10,4 +10,4 @@ Sphere geometry that easily opens and closes by dialating it's southern pole.
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/bunnybones1/threejs-geometry-retractable-sphere/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/Jam3/threejs-geometry-retractable-sphere/blob/master/LICENSE.md) for details.

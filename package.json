@@ -7,7 +7,7 @@
   "author": {
     "name": "Tomasz Dysinski",
     "email": "oz@bunnybones.com",
-    "url": "https://github.com/bunnybones1"
+    "url": "https://github.com/Jam3"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bunnybones1/threejs-geometry-retractable-sphere.git"
+    "url": "git://github.com/Jam3/threejs-geometry-retractable-sphere.git"
   },
-  "homepage": "https://github.com/bunnybones1/threejs-geometry-retractable-sphere",
+  "homepage": "https://github.com/Jam3/threejs-geometry-retractable-sphere",
   "bugs": {
-    "url": "https://github.com/bunnybones1/threejs-geometry-retractable-sphere/issues"
+    "url": "https://github.com/Jam3/threejs-geometry-retractable-sphere/issues"
   }
 }
