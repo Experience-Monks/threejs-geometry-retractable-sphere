@@ -18,16 +18,21 @@ view.renderManager.onEnterFrame.add(function() {
 	camera.lookAt(center);
 	sphere.material.uniforms.color.value.setRGB(Math.cos(animValue)*5, Math.cos(animValue)*5, Math.cos(animValue)*5);
 	sphere.material.uniforms.fullness.value = Math.cos(animValue) * 0.5 + 0.5;
+	
 })
 
 var sphere = new RetractableSphere(32, 16, {
 	side: THREE.BackSide,
+	wireframe: true,
 	// blending: THREE.AdditiveBlending
 });
-var sphere2 = new RetractableSphere(32, 16);
+var sphere2 = new RetractableSphere(32, 16, {
+	wireframe: true,
+	// blending: THREE.AdditiveBlending
+});
 
-sphere.position.x = 1;
-sphere2.position.x = -1;
+sphere.position.x = -1;
+sphere2.position.x = 1;
 
 scene.add(sphere);
 scene.add(sphere2);

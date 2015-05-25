@@ -29,16 +29,16 @@ function __getGeometryData(segsU, segsV) {
 		var vertices = geometryData.vertices;
 		var uvData = [];
 		for (var iV = 0; iV < segsV; iV++) {
-			var ratioV = iV / segsV;
+			var ratioV = iV / (segsV-1);
 			for (var iU = 0; iU < segsU; iU++) {
 				var uv = new THREE.Vector2(iU/(segsU-1), ratioV);
-				vertices.push(new THREE.Vector3(uv.x * Math.PI, uv.y * Math.PI * 2, 0));
+				vertices.push(new THREE.Vector3(uv.x * Math.PI * 2, uv.y * Math.PI, 0));
 				uvData.push(uv);
 			};
 		};
 		var faces = geometryData.faces;
 		var indicesQuad = [];
-		for (var iV = 1; iV <= segsV; iV++) {
+		for (var iV = 1; iV < segsV; iV++) {
 			for (var iU = 1; iU < segsU; iU++) {
 				var vA = iV % segsV;
 				var uA = iU;
@@ -49,8 +49,8 @@ function __getGeometryData(segsU, segsV) {
 				var uvba = vA * segsU + uB;
 				var uvbb = vB * segsU + uB;
 				faces.push(
-					new THREE.Face3(uvab, uvaa, uvba),
-					new THREE.Face3(uvba, uvbb, uvab)
+					new THREE.Face3(uvaa, uvab, uvba),
+					new THREE.Face3(uvbb, uvba, uvab)
 				);
 			}
 		}
