@@ -1,6 +1,6 @@
 {
   "name": "threejs-geometry-retractable-sphere",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sphere geometry that easily opens and closes by dialating it's southern pole.",
   "main": "index.js",
   "license": "MIT",
