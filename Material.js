@@ -48,8 +48,8 @@ function RetractableSphereMaterial(params) {
 		fragmentShader: __fragmentShader,
 		vertexShader: __vertexShader,
 		transparent: true,
-		radius: 1
-		// side: THREE.DoubleSide,
+		radius: 1,
+		side: THREE.DoubleSide,
 		// wireframe: true
 	};
 	defaults(params, defaultParams);
